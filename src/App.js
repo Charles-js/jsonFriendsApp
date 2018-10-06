@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://randomuser.me/api/?results=40').then(response => response.json())
+    fetch('https://randomuser.me/api/?results=50').then(response => response.json())
       .then(robotsdata => {
         this.setState({friends: robotsdata.results});
       });
